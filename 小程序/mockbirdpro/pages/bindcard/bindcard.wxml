@@ -1,0 +1,12 @@
+<view class="tiancardbox">
+  <view class="mockcard_htitle">添加观影卡</view>
+  <view class="mockcard_border">
+    <view class="cu-form-group">
+      <input placeholder="请输入卡号" bindinput="cardnumInput" value="{{cardnum}}"></input>
+    </view>
+    <view class="cu-form-group">
+      <input placeholder="请输入密码" bindinput="cardsecretInput" value="{{cardsecret}}"></input>
+    </view>
+  </view>
+  <view class="mockcard_btn" bindtap="bindCards">确认添加</view>
+</view>

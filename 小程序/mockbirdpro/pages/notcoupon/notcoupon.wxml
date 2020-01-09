@@ -1,0 +1,30 @@
+<view class='padding'>
+  <view class='coupon_item' wx:for="{{couponList}}" wx:key="index">
+    <image style="width:100%;height:100%;" src='http://img.mockbird.top/1578046081955581.png' mode="aspectFill" lazy-load="true"></image>
+    <view class='coupon_box_left'>
+      <view wx:if="{{item.type==1}}" class='coupon_item_title'>代金券</view>
+      <view wx:if="{{item.type==2}}" class='coupon_item_title'>买一赠一抵扣券</view>
+      <view wx:if="{{item.type==3}}" class='coupon_item_title'>{{item.remark}}</view>
+      <view class="coupon_item_text" wx:if="{{item.type!=3}}">仅限于指定场次</view>
+      <view class="coupon_item_text" wx:if="{{item.type==3}}">仅限于芜湖地区的影院</view>
+      <view class="coupon_item_text">{{item.createDate}}~{{item.validDate}}</view>
+    </view>
+    <view class='coupon_box_right'>
+      <text wx:if="{{item.type==1}}" class='coupon_item_money'>{{item.favorNum}}元</text>
+      <view class='coupon_status_img'>
+        <!-- <image src='http://img.mockbird.top/1561616028730065.png' wx:if="{{TabCur==1}}" mode="aspectFill"></image> -->
+        <image src='http://img.mockbird.top/1561615978916016.png' mode="aspectFill"></image>
+      </view>
+    </view>
+  </view>
+  <view class="shixiao" wx:if="{{couponList!=''}}" bindtap="goNotcoupon">查看失效券~</view>
+</view>
+
+
+<!-- 暂无数据 -->
+<view wx:if="{{couponList==''}}">
+  <view class='zanwu-img'>
+    <image style='width:100%;height:100%;' src='http://img.mockbird.top/1561615872045371.png'></image>
+  </view>
+  <view class='zanwu'>您还没有优惠券呢!</view>
+</view>

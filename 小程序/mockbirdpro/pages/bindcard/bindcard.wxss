@@ -1,0 +1,39 @@
+/* pages/bindcard/bindcard.wxss */
+
+.tiancardbox {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  padding: 25rpx;
+}
+
+.mockcard_htitle {
+  font-size: 36rpx;
+  font-weight: 600;
+  line-height: 100rpx;
+  padding-left: 15rpx;
+}
+
+.mockcard_border {
+  width: 100%;
+  height: auto;
+  border: 1px dashed #000;
+  padding: 15rpx;
+}
+.mockcard_btn {
+  width: 90%;
+  line-height: 80rpx;
+  border-radius: 10rpx;
+  color: #fff;
+  box-sizing: border-box;
+  font-size: 35rpx;
+  text-align: center;
+  margin: 30rpx auto;
+  -webkit-tap-highlight-color: transparent;
+  background: linear-gradient(to right, #ff8c19, #ff5d1d);
+}

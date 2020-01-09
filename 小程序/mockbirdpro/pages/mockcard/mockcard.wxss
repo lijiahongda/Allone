@@ -1,0 +1,121 @@
+/* pages/mockcard/mockcard.wxss */
+
+.mockcard_view {
+  width: 100%;
+  overflow: auto;
+  padding: 30rpx;
+  background: #fff;
+}
+
+.mockcard_header {
+  font-size: 30rpx;
+  font-weight: 600;
+  line-height: 100rpx;
+  padding-left: 15rpx;
+  position: relative;
+}
+
+.mockcard_htitle {
+  font-size: 36rpx;
+  font-weight: 600;
+  line-height: 100rpx;
+  padding-left: 15rpx;
+}
+
+.mockcard_border {
+  width: 100%;
+  height: auto;
+  border: 1px dashed #000;
+  padding: 15rpx;
+}
+
+.addcard {
+  position: absolute;
+  right: 20rpx;
+  z-index: 999;
+  top: -2rpx;
+}
+
+.mockcard_btn {
+  width: 90%;
+  line-height: 80rpx;
+  border-radius: 10rpx;
+  color: #fff;
+  box-sizing: border-box;
+  font-size: 35rpx;
+  text-align: center;
+  margin: 30rpx auto;
+  -webkit-tap-highlight-color: transparent;
+  background: linear-gradient(to right, #ff8c19, #ff5d1d);
+}
+
+.mockcard_loheader {
+  display: flex;
+  justify-content: center;
+  margin-top: 50rpx;
+}
+
+.mockcard_loheader_icon {
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.mockcard_loheader_text {
+  font-size: 36rpx;
+  color: #000;
+  font-weight: 900;
+  line-height: 22rpx;
+  margin: 0rpx 15rpx;
+}
+
+.card_box {
+  position: relative;
+  width: 100%;
+  min-height: 400rpx;
+  height: auto;
+  overflow: auto;
+  padding: 10rpx;
+  background: #fff;
+}
+
+.card_one {
+  width: 80%;
+  height: 340rpx;
+  background: linear-gradient(to right, #ff7566, #fe5362);
+  border-radius: 10rpx;
+  /* position: absolute; *//* left: 10%; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 36rpx;
+  font-weight: 600;
+  line-height: 70rpx;
+  padding: 50rpx;
+  color: #fff;
+  margin: 15rpx auto;
+}
+
+.card_two {
+  width: 80%;
+  height: 340rpx;
+  background: linear-gradient(to right, #eaac51, #ec9b51);
+  border-radius: 10rpx;
+  position: absolute;
+  left: 10%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card_three {
+  width: 80%;
+  height: 340rpx;
+  background: linear-gradient(to right, #518cca, #518cca);
+  border-radius: 10rpx;
+  position: absolute;
+  left: 10%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card_four {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-top: 200rpx;
+}

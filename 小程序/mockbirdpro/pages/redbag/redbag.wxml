@@ -1,0 +1,32 @@
+<!-- 首次 -->
+<view class="redbag_bg" wx:if="{{isChary==false}}">
+  <view class="open_bag" bindtap="receiveRedPacket"></view>
+</view>
+<!-- 拆完 -->
+<view class="redbag_bg_open" wx:if="{{isChary==true}}">
+  <image class="bg_image_red" src="http://img.mockbird.top/1576486646263361.png"></image>
+  <view class="redbag_ggtwo">
+    <view class="shueeee">
+      <text class="dashu">{{o_money}}</text>
+      <text class="xiaoshu">元</text>
+    </view>
+    <view class="amniu">
+      <image style="width:100%;height:100%;" src="http://img.mockbird.top/1576237197941421.png"></image>
+    </view>
+    <!-- <view class="amniu">
+      <image style="width:100%;height:100%;" src="http://img.mockbird.top/1576237197941421.png"></image>
+    </view> -->
+  </view>
+  <view class="chailist">
+    <view class="chailist_top">
+       <image style='width:100%;height:100%;' src="http://img.mockbird.top/1576488749045486.png"></image>
+    </view>
+    <view class='share_flex_list' wx:for='{{redpacketlist}}' wx:key='{{item}}'>
+      <view class='people_box_arvai'>
+        <image style='width:100%;height:100%;border-radius:50%;' src='{{item.headUrl}}'></image>
+      </view>
+      <view class='share_flex_listb'>{{item.nickName}}</view>
+      <view class='share_flex_listc'>已领{{item.packetAmt}}元</view>
+    </view>
+  </view>
+</view>
